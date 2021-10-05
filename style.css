@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.back {
+  width: 30%;
+  height: 40vh;
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgqKRUdvxB437LES2RQBIRFxLzunjCEfMf3Q&usqp=CAU);
+  background-size: cover;
+  background-position: bottom;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  box-shadow: 0 3px 5px 3px rgb(255, 191, 0);
+}
+.hour {
+  color: #fff;
+  opacity: 0.5;
+  box-shadow: 0 0 3px 2px rgb(255, 191, 0);
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 35px;
+  grid-column: 5/7;
+  grid-row: 3/4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
+@media only screen and (max-width: 600px) {
+  .back {
+    width: 80%;
+    height: 40vh;
+    background-size: cover;
+  }
+  .hour {
+    font-size: 30px;
+  }
+}
